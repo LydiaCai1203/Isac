@@ -1,0 +1,20 @@
+apm:
+  enabled: false
+  service_name: "Isac"
+  otel_exporter_otlp_endpoint: "0.0.0.0:4317"
+  insecure: true
+
+postgres:
+  dsn: "host=localhost user=postgres password=postgres dbname=postgres port=5432 sslmode=disable"
+
+redis:
+  addr: "localhost:6379"
+  password: ""
+
+http:
+  addr: ":8080"
+
+cron:
+  enabled: true
+  spec: "@every 10s" 
+
